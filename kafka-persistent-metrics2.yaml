@@ -29,14 +29,14 @@ spec:
        deleteClaim: false
    resources:
      requests:
-       cpu: "1000m"
-       memory: "2Gi"
+       cpu: "2000m"
+       memory: "4Gi"
      limits:
-       cpu: "1000m"
-       memory: "2Gi"
+       cpu: "2000m"
+       memory: "4Gi"
    jvmOptions: 
-     -Xms: 1024m
-     -Xmx: 1024m
+     -Xms: 2048m
+     -Xmx: 2048m
    tlsSidecar:
      resources:
        limits:
