@@ -1,7 +1,9 @@
 # amq-streams-benchmarking
 Tested on OpenShift v4.5
+
 a--> project name kafka-cluster
 a--> use bash shell some command not work in zsh
+
 ## Deploy Kafka:
 Run ```./deploy_kafka.sh```
 
