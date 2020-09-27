@@ -4,6 +4,10 @@
 
 #### Pre-req
 
+oc expose svc/prometheus-operated
+
+
+
 - Running kafka cluster (asusming it is created with this project's scripts with default naming and labels, if not adjust in run-metrics.sh)
 - login to the ocp cluster
 
