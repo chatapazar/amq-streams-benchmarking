@@ -3,20 +3,20 @@ oc new-project p1
 oc delete project p1
 
 
-./run-test.sh TestCase-50mil-100k-1024-p1-3broker-c1r2gh1g-1client my-cluster-kafka-bootstrap.kafka-cluster.svc.cluster.local:9092 topic1 2048 50000000 100000 kafka-cluster p1 http://prometheus-operated-kafka-cluster.apps.cluster-0b24.0b24.example.opentlc.com/api/v1/query
+./run-test.sh TestCase-1mil-100k-1024-p1-3broker-c1r2gh1g-1client my-cluster-kafka-bootstrap.kafka-cluster.svc.cluster.local:9092 topic1 2048 1000000 100000 kafka-cluster p1 http://prometheus-operated-kafka-cluster.apps.cluster-0b24.0b24.example.opentlc.com/api/v1/query
 
-./run-test.sh TestCase-50mil-100k-2048-p1-3broker-c1r2gh1g-1client my-cluster-kafka-bootstrap.kafka-cluster.svc.cluster.local:9092 topic1 2048 50000000 100000 kafka-cluster p1 http://prometheus-operated-kafka-cluster.apps.cluster-0b24.0b24.example.opentlc.com/api/v1/query
+./run-test.sh TestCase-1mil-100k-2048-p1-3broker-c1r2gh1g-1client my-cluster-kafka-bootstrap.kafka-cluster.svc.cluster.local:9092 topic1 2048 1000000 100000 kafka-cluster p1 http://prometheus-operated-kafka-cluster.apps.cluster-0b24.0b24.example.opentlc.com/api/v1/query
 
-./run-test.sh TestCase-50mil-100k-4096-p1-3broker-c1r2gh1g-1client my-cluster-kafka-bootstrap.kafka-cluster.svc.cluster.local:9092 topic1 4096 50000000 100000 kafka-cluster p1 http://prometheus-operated-kafka-cluster.apps.cluster-0b24.0b24.example.opentlc.com/api/v1/query
+./run-test.sh TestCase-1mil-100k-4096-p1-3broker-c1r2gh1g-1client my-cluster-kafka-bootstrap.kafka-cluster.svc.cluster.local:9092 topic1 4096 1000000 100000 kafka-cluster p1 http://prometheus-operated-kafka-cluster.apps.cluster-0b24.0b24.example.opentlc.com/api/v1/query
 
-./run-test.sh TestCase-50mil-100k-8192-p1-3broker-c1r2gh1g-1client my-cluster-kafka-bootstrap.kafka-cluster.svc.cluster.local:9092 topic1 8192 50000000 100000 kafka-cluster p1 http://prometheus-operated-kafka-cluster.apps.cluster-0b24.0b24.example.opentlc.com/api/v1/query
+./run-test.sh TestCase-1mil-100k-8192-p1-3broker-c1r2gh1g-1client my-cluster-kafka-bootstrap.kafka-cluster.svc.cluster.local:9092 topic1 8192 1000000 100000 kafka-cluster p1 http://prometheus-operated-kafka-cluster.apps.cluster-0b24.0b24.example.opentlc.com/api/v1/query
 
 
 
-./run-test.sh TestCase-50mil-100k-1024-p1-3broker-c2r4gh2g-1client my-cluster-kafka-bootstrap.kafka-cluster.svc.cluster.local:9092 topic1 2048 50000000 100000 kafka-cluster p1 http://prometheus-operated-kafka-cluster.apps.cluster-0b24.0b24.example.opentlc.com/api/v1/query
+./run-test.sh TestCase-1mil-100k-1024-p1-3broker-c2r4gh2g-1client my-cluster-kafka-bootstrap.kafka-cluster.svc.cluster.local:9092 topic1 2048 1000000 100000 kafka-cluster p1 http://prometheus-operated-kafka-cluster.apps.cluster-0b24.0b24.example.opentlc.com/api/v1/query
 
-./run-test.sh TestCase-50mil-100k-2048-p1-3broker-c2r4gh2g-1client my-cluster-kafka-bootstrap.kafka-cluster.svc.cluster.local:9092 topic1 2048 50000000 100000 kafka-cluster p1 http://prometheus-operated-kafka-cluster.apps.cluster-0b24.0b24.example.opentlc.com/api/v1/query
+./run-test.sh TestCase-1mil-100k-2048-p1-3broker-c2r4gh2g-1client my-cluster-kafka-bootstrap.kafka-cluster.svc.cluster.local:9092 topic1 2048 1000000 100000 kafka-cluster p1 http://prometheus-operated-kafka-cluster.apps.cluster-0b24.0b24.example.opentlc.com/api/v1/query
 
-./run-test.sh TestCase-50mil-100k-4096-p1-3broker-c2r4gh2g-1client my-cluster-kafka-bootstrap.kafka-cluster.svc.cluster.local:9092 topic1 4096 50000000 100000 kafka-cluster p1 http://prometheus-operated-kafka-cluster.apps.cluster-0b24.0b24.example.opentlc.com/api/v1/query
+./run-test.sh TestCase-1mil-100k-4096-p1-3broker-c2r4gh2g-1client my-cluster-kafka-bootstrap.kafka-cluster.svc.cluster.local:9092 topic1 4096 1000000 100000 kafka-cluster p1 http://prometheus-operated-kafka-cluster.apps.cluster-0b24.0b24.example.opentlc.com/api/v1/query
 
-./run-test.sh TestCase-50mil-100k-8192-p1-3broker-c2r4gh2g-1client my-cluster-kafka-bootstrap.kafka-cluster.svc.cluster.local:9092 topic1 8192 50000000 100000 kafka-cluster p1 http://prometheus-operated-kafka-cluster.apps.cluster-0b24.0b24.example.opentlc.com/api/v1/query
+./run-test.sh TestCase-1mil-100k-8192-p1-3broker-c2r4gh2g-1client my-cluster-kafka-bootstrap.kafka-cluster.svc.cluster.local:9092 topic1 8192 1000000 100000 kafka-cluster p1 http://prometheus-operated-kafka-cluster.apps.cluster-0b24.0b24.example.opentlc.com/api/v1/query
