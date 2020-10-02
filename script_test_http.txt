@@ -1,3 +1,6 @@
+curl -v GET http://my-bridge-bridge-service-kafka-cluster.apps.cluster-b09f.b09f.example.opentlc.com/healthy
+
+
 curl -X POST \
   http://my-bridge-bridge-service-kafka-cluster.apps.cluster-b09f.b09f.example.opentlc.com/topics/topic1 \
   -H 'content-type: application/vnd.kafka.json.v2+json' \
