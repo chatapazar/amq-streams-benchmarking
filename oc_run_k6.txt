@@ -7,8 +7,8 @@ oc delete project p1
 oc delete project p2
 oc delete project p3
 
-oc run kafka-k6 -n p1 -i --image=loadimpact/k6 --rm=true --restart=Never -- run --vus 50 --duration 300s - <script.js
+oc run kafka-k6 -n p1 -i --image=loadimpact/k6 --rm=true --restart=Never -- run --vus 10 --duration 300s - <script.js
 
-oc run kafka-k6 -n p2 -i --image=loadimpact/k6 --rm=true --restart=Never -- run --vus 50 --duration 300s - <script.js
+oc run kafka-k6 -n p2 -i --image=loadimpact/k6 --rm=true --restart=Never -- run --vus 10 --duration 300s - <script.js
 
-oc run kafka-k6 -n p3 -i --image=loadimpact/k6 --rm=true --restart=Never -- run --vus 50 --duration 300s - <script.js
+oc run kafka-k6 -n p3 -i --image=loadimpact/k6 --rm=true --restart=Never -- run --vus 10 --duration 300s - <script.js
