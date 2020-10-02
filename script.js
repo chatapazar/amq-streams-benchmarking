@@ -4,7 +4,7 @@ import faker from 'https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.
 
 export default function () {
   //var url = 'http://my-bridge-bridge-service-kafka-cluster.apps.cluster-b09f.b09f.example.opentlc.com/topics/topic1';
-  var url = 'http://my-bridge-bridge-service-kafka-cluster.apps.cluster-b09f.b09f.example.opentlc.com/topics/topic1';
+  var url = 'http://my-bridge-bridge-service.kafka-cluster.svc.cluster.local:8080/topics/topic1';
 
   let datas = []
 
