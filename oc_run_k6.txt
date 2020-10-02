@@ -1,1 +1,14 @@
-oc run kafka-k6 -n p1 -i --image=registry.redhat.io/amq7/amq-streams-kafka-25-rhel7:1.5.0 --rm=true --restart=Never -- bin/kafka-producer-perf-test.sh --num-records $NUM_RECORDS --throughput $THROUGHPUT --producer-props bootstrap.servers=$BOOTSTRAP  key.serializer=org.apache.kafka.common.serialization.StringSerializer value.serializer=org.apache.kafka.common.serialization.StringSerializer --topic $TOPIC --record-size $RECORD_SIZE --print-metrics > ./$TEST_ID/perf-test.txt
+
+oc new-project p1
+oc new-project p2
+oc new-project p3
+
+oc delete project p1
+oc delete project p2
+oc delete project p3
+
+oc run kafka-k6 -n p1 -i --image=loadimpact/k6 --rm=true --restart=Never -- run --vus 50 --duration 300s - <script.js
+
+oc run kafka-k6 -n p2 -i --image=loadimpact/k6 --rm=true --restart=Never -- run --vus 50 --duration 300s - <script.js
+
+oc run kafka-k6 -n p3 -i --image=loadimpact/k6 --rm=true --restart=Never -- run --vus 50 --duration 300s - <script.js
