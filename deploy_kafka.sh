@@ -59,6 +59,8 @@ echo "Deploying Kafka"
 
 echo 
 
+oc delete limits --all -n $tenant
+
 oc apply -f cluster-operator -n $tenant
 
 echo
